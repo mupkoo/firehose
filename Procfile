@@ -1,3 +1,3 @@
 release: ./bin/heroku
-web:     bin/rails s -p 3000
+web:     bin/rails s -p $PORT
 worker:  bin/sidekiq
