@@ -8,8 +8,12 @@ else
 end
 ChangeCollationForTagNames.class_eval do
   def up
-    if ActsAsTaggableOn::Utils.using_mysql?
-      execute("ALTER TABLE tags MODIFY name varchar(255) CHARACTER SET utf8 COLLATE utf8_bin;")
+    begin
+      if ActsAsTaggableOn::Utils.using_mysql?
+        execute("ALTER TABLE tags MODIFY name varchar(255) CHARACTER SET utf8 COLLATE utf8_bin;")
+      end
+    rescue NameError => e
+      puts "acts_as_taggable_on is not installed"
     end
   end
 end
