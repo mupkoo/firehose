@@ -8,4 +8,6 @@ ls -la node_modules/.bin
 node_modules/.bin/ember build --prod
 
 cd ..
+ls -la
+ls -la frontend
 bundle exec rails db:migrate
