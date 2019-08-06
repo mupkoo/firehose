@@ -1,3 +1,3 @@
-release: ./bin/heroku
-web:     bin/rails s -p $PORT
+web:     bundle exec puma -C config/puma.rb
 worker:  bin/sidekiq
+release: ./bin/heroku
