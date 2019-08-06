@@ -4,7 +4,8 @@ cd frontend
 pwd
 yarn install
 pwd
-./node_modules/.bin/ember build --prod
+ls -la node_modules/.bin
+node_modules/.bin/ember build --prod
 
 cd ..
 bundle exec rails db:migrate
