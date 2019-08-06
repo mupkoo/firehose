@@ -1,2 +1,3 @@
-web:    bin/rails s -p 3000
-worker: bin/sidekiq
+release: ./bin/heroku
+web:     bin/rails s -p 3000
+worker:  bin/sidekiq
