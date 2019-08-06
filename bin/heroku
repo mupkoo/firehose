@@ -2,6 +2,7 @@
 
 cd frontend
 yarn install
-ember build --prod
+yarn build --prod
+
 cd ..
 bundle exec rails db:migrate
