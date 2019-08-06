@@ -1,7 +1,9 @@
 #!/usr/bin/env bash
 
 cd frontend
+pwd
 yarn install
+pwd
 ./node_modules/.bin/ember build --prod
 
 cd ..
