@@ -10,4 +10,5 @@ node_modules/.bin/ember build --prod
 cd ..
 ls -la
 ls -la frontend
+ls -la frontend/node_modules
 bundle exec rails db:migrate
