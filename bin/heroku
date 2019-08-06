@@ -3,7 +3,6 @@
 cd frontend
 pwd
 yarn install
-ls -la node_modules
 yarn build --prod
 
 cd ..
