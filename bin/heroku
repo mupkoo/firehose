@@ -3,12 +3,8 @@
 cd frontend
 pwd
 yarn install
-pwd
-ls -la node_modules/.bin
-node_modules/.bin/ember build --prod
+yarn add global ember-cli
+ember build --prod
 
 cd ..
-ls -la
-ls -la frontend
-ls -la frontend/node_modules
 bundle exec rails db:migrate
