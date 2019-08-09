@@ -23,4 +23,5 @@ Rails.application.routes.draw do
   end
 
   get '*_', to: 'frontend#index'
+  root to: 'frontend#index'
 end
